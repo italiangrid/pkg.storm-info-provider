@@ -1,13 +1,10 @@
 FROM  italiangrid/build-centos7
 
-run yum -y install pkgconfig \
-  globus-gssapi-gsi-devel \
-  globus-gss-assist-devel \
-  gsoap-devel \
-  CGSI-gSOAP-devel \
-  voms
-user build
-add Makefile ./storm-info-provider.spec.in /home/build/
-workdir /home/build
+RUN yum -y install pkgconfig \
+  python2-devel
 
-cmd /bin/bash -c make
+USER build
+ADD Makefile ./storm-dynamic-info-provider.spec.in /home/build/
+WORKDIR /home/build
+
+CMD /bin/bash -c make
