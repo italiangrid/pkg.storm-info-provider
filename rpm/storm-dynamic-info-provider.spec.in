@@ -23,7 +23,7 @@ Group: Development/Libraries
 License: Apache License 2.0
 URL: https://github.com/italiangrid/storm-info-provider
 
-Source:    %{name}-%{version}.tar.gz
+Source:    %{name}.tar.gz
 BuildRoot: %{_tmppath}/%{name}-%{version}-%{release}-root-%(%{__id_u} -n)
 
 BuildArch: noarch
