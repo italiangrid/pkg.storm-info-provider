@@ -22,7 +22,7 @@ Both images support the following parameters (expressed as environment variables
 
 | **PARAMETER**   | **DEFAULT VALUE**                                    | **MEANING**                                            |
 | --------------- | ---------------------------------------------------- | ------------------------------------------------------ |
-| BUILD_TAG       | develop                                              | The storm-client branch to build                       |
+| BUILD_TAG       | develop                                              | The storm-info-provider branch to build                       |
 | BUILD_REPO      | git://github.com/italiangrid/storm-info-provider.git | URL of the GIT  repo                                   |
 | BUILD_NUMBER    | N/A                                                  | User provided build number. Used for internal builds   |
 
